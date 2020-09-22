@@ -1,0 +1,36 @@
+---
+id: Service_CiscoIot
+name: Service_CiscoIot
+full: A client for parts of the Cisco Jasper IoT API
+description: A client for parts of the Cisco Jasper IoT API
+list: dev
+type: library
+homepage: https://www.horde.org/
+authors:
+  -
+    name: Ralf Lang
+    user: rlang
+    email: lang@b1-systems.de
+    active: true
+    role: lead
+version:
+  release: 0.0.1
+  api: 0.0.1
+state:
+  release: alpha
+  api: alpha
+license:
+  identifier: LGPL-2.1
+  uri: http://www.horde.org/licenses/lgpl21
+dependencies:
+  required:
+    php: ^7
+    composer:
+        horde/exception: ^2
+        horde/http: ^2
+  optional:
+    composer:
+        horde/test: ^2
+autoload:
+  psr-4:
+    \\Horde\\Service\\CiscoIot: /src
